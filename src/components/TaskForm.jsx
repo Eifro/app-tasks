@@ -43,7 +43,8 @@ function TaskForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sm p-4">
+      <label htmlFor="title">Tarea</label>
       <input type="text" placeholder="Título" name="title" onChange={handleChange} value={task.title} />
       <textarea name="description" placeholder="Descripción" onChange={handleChange} value={task.description}></textarea>
       <button type="submit">Guardar</button>
